@@ -144,3 +144,4 @@ typechain-types
 cache
 artifacts
 
+frontend/app/config.json

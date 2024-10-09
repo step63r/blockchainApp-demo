@@ -7,8 +7,10 @@ import { Alert, Avatar, Button, Card, Container, Group, SimpleGrid, Stack, Text,
 import { IconCubePlus } from "@tabler/icons-react";
 import { MyERC721, MyERC721__factory } from "@/types";
 
-// ★デプロイしたMyERC721 Contractのアドレスを入力
-const contractAddress = '';
+import jsonConfig from "../config.json";
+
+// デプロイしたMyERC721 Contractのアドレスを入力
+const contractAddress = jsonConfig.MyERC721ContractAddress;
 // NOTICE:各自アドレスが異なるので、確認・変更してください！【5.3節リスト08を参照】
 
 type NFT = {

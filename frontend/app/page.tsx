@@ -3,8 +3,10 @@ import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import artifact from "../abi/MyToken.sol/MyToken.json";
 
-// ★デプロイしたMyTokenのアドレス
-const contractAddress = "";
+import jsonConfig from "./config.json";
+
+// デプロイしたMyTokenのアドレス
+const contractAddress = jsonConfig.MyERC20ContractAddress;
 
 export default function Home() {
   // Metamaskなどが提供するイーサリアムプロバイダーを格納する変数
